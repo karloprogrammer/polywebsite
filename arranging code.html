@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange the Code Game</title>
+    <link rel="stylesheet" href="CSS&JS/arranging code/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <span class="poly">POLY</span><span class="web">WEB</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="games selection.html">Games</a></li>
+            <li><a href="#games">Content</a></li>
+        </ul>
+
+        <!-- Account Section -->
+        <div class="account-section">
+            <i class="fas fa-user-circle"></i> <!-- Account Icon (from Font Awesome) -->
+            <a href="LOGIN PAGE.php" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Arrange the Code</h1>
+
+        <!-- Level Selection -->
+        <div id="level-selection">
+            <h2>Select a Level</h2>
+            <button class="level-btn" data-level="easy">Easy</button>
+            <button class="level-btn" data-level="moderate">Moderate</button>
+            <button class="level-btn" data-level="hard">Hard</button>
+        </div>
+
+        <!-- Game Area -->
+        <div id="game-area" style="display:none;">
+            <p class="hint">Hint: <span id="hint">This is a variable declaration</span></p>
+            
+            <div class="code-area">
+                <!-- Code snippets will be populated here -->
+            </div>
+
+            <div class="drop-area" id="drop-area">
+                <!-- Players will arrange code snippets here -->
+            </div>
+
+            <button id="checkBtn">Check Code</button>
+            <p id="result"></p>
+
+            <div id="score-area">
+                <p>Score: <span id="score">0</span>/15</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="CSS&JS/arranging code/script.js"></script>
+</body>
+</html>
